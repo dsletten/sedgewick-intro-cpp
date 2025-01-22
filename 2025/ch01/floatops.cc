@@ -26,14 +26,14 @@ int main(int argc, const char* argv[]) {
   double difference = a - b;
   double product = a * b;
   double quotient = a / b;
-  //  double remainder = a % b;
+  double remainder = fmod(a, b);
   double power = pow(a, b);
   
   cout << a << " + " << b << " = " << sum << endl;
   cout << a << " - " << b << " = " << difference << endl;
   cout << a << " * " << b << " = " << product << endl;
   cout << a << " / " << b << " = " << quotient << endl;
-  //  cout << a << " % " << b << " = " << remainder << endl;
+  cout << a << " % " << b << " = " << remainder << endl;
   cout << a << " ** " << b << " = " << power << endl;
   
   return 0;
